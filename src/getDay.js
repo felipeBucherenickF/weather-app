@@ -11,5 +11,5 @@ const numberDays = {
 export const getDay = (date) => {
   const newDate = new Date(date);
   const dayNumber = newDate.getDay();
-  return numberDays[dayNumber];
+  return numberDays[dayNumber].toUpperCase();
 };

@@ -1,3 +1,5 @@
+import "./style.css";
+
 import { displayWeather } from "./displayWeather";
 import { getData } from "./getData";
 
@@ -17,5 +19,6 @@ getInfoButton.addEventListener("click", async (event) => {
   days = await getInfo(location.value);
   console.log(days);
   const weather = displayWeather(days);
+  content.textContent = "";
   content.append(weather);
 });

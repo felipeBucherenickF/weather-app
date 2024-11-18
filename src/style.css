@@ -1,0 +1,91 @@
+:root {
+  --background-color: #caf4ff;
+  --action-color: #fff9d0;
+  --font-color: #5ab2ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+h1 {
+  margin: 2rem;
+  font-size: 3.4rem;
+  color: #267fcc;
+}
+
+form {
+  display: flex;
+  margin: 2rem;
+  input {
+    height: 3.6rem;
+    width: 24rem;
+    border: none;
+    outline: none;
+    border-radius: 0.7rem 0 0 0.7rem;
+    padding-left: 1.2rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: gray;
+    background-color: white;
+  }
+  input::placeholder {
+    color: lightgray;
+  }
+  button {
+    background-color: var(--action-color);
+    border: none;
+    color: var(--font-color);
+    font-size: 1.8rem;
+    width: 8rem;
+    height: 3.6rem;
+    font-weight: bold;
+    border-radius: 0 0.7rem 0.7rem 0;
+    cursor: pointer;
+  }
+}
+
+.display-weather {
+  display: flex;
+  gap: 1rem;
+  margin-top: 6rem;
+}
+
+.day-display {
+  display: flex;
+  flex-direction: column;
+  border: solid 3px #97cfff;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  min-width: 18rem;
+  h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: #267fcc;
+    margin-bottom: 1rem;
+  }
+  span {
+    font-size: 1.4rem;
+    color: gray;
+  }
+  p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--font-color);
+    margin-bottom: 1rem;
+  }
+}
